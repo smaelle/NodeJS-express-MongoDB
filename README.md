@@ -17,14 +17,19 @@ A l’inverse des tables SQL, aucune structure n’est imposée par MongoDB. Cha
 
 Voir la documentation et suivre les étapes d'installation: https://doc.ubuntu-fr.org/mongodb
 
+
 2/ MongoDB installé - Quelques opérations
 
 a/Ouvrir le shell (la console) nous permettant de commander MongoDB
+
 b/Afficher toutes les bases de données gérées par MongoDB: commande show dbs
+
 c/Changer de baseou créer une base: commande use <nom-de-la-base>
+  
 d/Insérer des documents: 
 exemple: db.personnages.insert( { name : “Gordon Freeman”, game : “Half-Life” } ) ;
 Cette simple commande insérera le document { name: "Gordon Freeman", game: "HalfLife" } au sein de la collection personnages. Cette collection n’existe pas, mais sera créée automatiquement.
+
 e/Faire des recherches:db.personnages.find()
 Avec spécification des: db.personnages.find( { name : "Gordon Freeman" } ).
 
